@@ -1,1 +1,1 @@
-This is the behind the curtains.
+I want to try an Eleventy blog, but my Github Page uses Jekyll. So I have decided to create a new repository for the blog and add the build in the <a href="https://github.com/anamartins/anamartins.github.io">github page</a>. In this way I can have <a href="https://anamartins.github.io/blog/">a blog</a> there.
