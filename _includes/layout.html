@@ -18,9 +18,9 @@
     </nav>
     <header id="header-post"><h1 class="post-title">{{title}}</h1></header>
     <sidebar id="sidebar-post">
-        <h3 class="sidebar-other-posts-title">Latest posts</h3>
+        <h2 class="sidebar-other-posts-title">Latest posts</h3>
         <ul class="sidebar-other-posts">
-            {% for allPost in collections.post %}
+            {% for allPost in collections.post reversed %}
                 <li class="sidebar-other-posts-item">
                     <a href="{{allPost.url}}">{{allPost.data.title}}</a>
                 </li>
@@ -32,11 +32,14 @@
         {{ content }}
     </main>
     <footer id="footer-post">
-        <h3>Say hello</h3>
-        <ul class="footer-social-media">
-            <li><a href="https://www.linkedin.com/in/anacmartins/" target="_blank">Linkedin</a></li>
-            <li><a href="https://github.com/anamartins" target="_blank">Github</a></li>
-        </ul>
+        <div class="footer-social-media">
+            <h2>Say hello</h3>
+            <ul class="footer-social-media-list">
+                <li><a href="https://www.linkedin.com/in/anacmartins/" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/anamartins" target="_blank">Github</a></li>
+            </ul>
+        </div>
+        <a href="/blog/feed.xml" class="rss-link">rss</a>
     </footer>
    
 </body>

@@ -1,6 +1,6 @@
 ---
 title: Creating a blog with Eleventy
-date: 2024-11-15
+date: 2024-11-16
 tags: eleventy
 ---
 Last week, I decided that I want to have a technical blog again. I had one some time ago, when I studied SEO, and it helped me to understand everything better. Now that I am a frontend developer, it's time again.
