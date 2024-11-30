@@ -3,11 +3,9 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 
 export default function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("./blog/style.css");
-    eleventyConfig.addPlugin(syntaxHighlight, {
-      preAttributes: {
-        tabindex: 0}
-    });
+    eleventyConfig.addPassthroughCopy("./blog/css/style.css");
+    eleventyConfig.addPassthroughCopy("./blog/css/prism-z-touch.css");
+    eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(feedPlugin, {
       type: "rss", // or "rss", "json"
       outputPath: "/blog/feed.xml",
@@ -25,5 +23,6 @@ export default function(eleventyConfig) {
         }
       }
     });
+    eleventyConfig.setTemplateFormats("md,html,css");
   };
   
