@@ -27,7 +27,10 @@
         </span>
         <a href="/blog/index.html">Home</a>
     </nav>
-    <header id="header-post"><h1 class="post-title">{{title}}</h1></header>
+    <header id="header-post"><h1 class="post-title">{{title}}</h1>
+        <section>written in <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time> by {{author}}
+        </section>
+    </header>
     <sidebar id="sidebar-post">
         <h2 class="sidebar-other-posts-title">Latest posts</h3>
         <ul class="sidebar-other-posts">
@@ -39,6 +42,7 @@
         </ul>
     
     </sidebar>
+
     <main id="main-post">
         {{ content }}
     </main>

@@ -82,6 +82,18 @@ main {
     align-items: center;
 }
 
+.latest-posts-items {
+    padding: 0;
+}
+
+.latest-posts-item {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+.latest-posts-item-date {
+    margin-left: 0.5rem;
+}
+
 h1 {
     font-family: "Rubik Mono One", monospace;
     font-weight: 900;
